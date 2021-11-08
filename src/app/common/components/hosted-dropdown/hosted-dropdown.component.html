@@ -1,0 +1,7 @@
+<div class="wrapper"
+  [dropdownContent]='content'
+  [dropdownHost]='host'
+  [dropdown]='open'
+  (activeZoneChange)="onActiveZone($event)">
+  <ng-content></ng-content>
+</div>
