@@ -1,7 +1,7 @@
 import { Directive, ElementRef, Inject, OnDestroy, Optional, Output, SkipSelf } from "@angular/core";
 import { Observable } from "rxjs";
 import { distinctUntilChanged, map, skip, startWith } from "rxjs/operators";
-import { ACTIVE_ELEMENT } from "../services/active-element";
+import { ACTIVE_ELEMENT } from "../services/active-element.service";
 
 @Directive({
   selector: '[activeZone],[activeZoneChange]'
