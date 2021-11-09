@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomDataListComponent } from './common/components/custom-data-list/custom-data-list.component';
 import { DataListComponent } from './common/components/data-list/data-list.component';
 import { DataListDirective } from './common/components/data-list/data-list.directive';
 import { DropdownBoxComponent } from './common/components/dropdown-box/dropdown-box.component';
@@ -18,6 +19,7 @@ import { DropdownDirective } from './directives/dropdown.directive';
     PortalHostComponent,
     SelectComponent,
     DataListComponent,
+    CustomDataListComponent,
     HostedDropdownComponent,
     DropdownBoxComponent,
     DropdownDirective,

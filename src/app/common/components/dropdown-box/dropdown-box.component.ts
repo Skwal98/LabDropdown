@@ -24,8 +24,8 @@ export class DropdownBoxComponent implements AfterViewInit {
     const hostRect = this.directive.dropdownHost;
 
     style.position = 'absolute';
-    style.top = clientRect.x + clientRect.height + 5 + 'px';
-    style.left = clientRect.y + 'px';
+    style.top = clientRect.y + clientRect.height + 5 + 'px';
+    style.left = clientRect.x + 'px';
   }
 
 }

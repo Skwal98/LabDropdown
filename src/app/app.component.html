@@ -1,4 +1,17 @@
-<app-select>
-  <app-data-list *dataList [elements]="values"></app-data-list>
-</app-select>
+<div class="row">
+  <div class="col-6">
+      <app-hosted-dropdown [content]="content">
+        <button tuiButton type="button" class="btn btn-primary">Drop down data list</button>
+      </app-hosted-dropdown>
+      <ng-template #content>
+        <app-data-list [elements]="values"></app-data-list>
+      </ng-template>
+  </div>
+  <div class="col-6">
+    <app-select>
+      <app-custom-data-list *dataList [elements]="values"></app-custom-data-list>
+    </app-select>
+  </div>
+</div>
+
 <portal-host></portal-host>

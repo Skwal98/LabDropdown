@@ -8,15 +8,22 @@ import { AfterContentInit, ChangeDetectorRef, Component, OnInit } from '@angular
 export class AppComponent implements OnInit, AfterContentInit{
 
   values: string[];
+  menuValue: string[];
 
   constructor(public cd: ChangeDetectorRef) {
   }
+  
   ngAfterContentInit(): void {
     this.values =  [
       'An item',
       'A second item',
       'A third item',
       'A fourth item',
+    ];
+    this.menuValue =  [
+      'Users',
+      'Cars',
+      'Rents'
     ];
   }
 
